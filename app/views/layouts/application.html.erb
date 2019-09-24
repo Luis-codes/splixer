@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Splixer</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <nav class="navbar navbar-inverse bg-inverse">
+    <nav class="navbar-brand headline">
+      <%= link_to 'Splitters', root_path %>
+    </nav>
+    <nav class="navbar-toggler-right headline">
+      <%= link_to 'Create', new_car_path %>
+    </nav>
+  </nav>
+
+  <br />
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+<h1>Enter your car Details.</h1>
+
+  <%= simple_form_for @car do |f| %>
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <%= f.submit 'Create', class: 'btn btn-danger' %>
+  <% end %>

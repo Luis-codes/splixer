@@ -1,0 +1,30 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+
+body {
+  background-color: #ebe6da;
+  color: black;
+}
+
+.navbar {
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+}
+
+.headline {
+  font-family: 'Satisfy', cursive;
+  font-size: 32px;
+}
+
+.line {
+  background-color: white;
+}
+
+.box {
+  width: 100%;
+  margin: 0 5px 0 5px;
+}
+
+img {
+  height: 300px;
+  width: 400px;
+}
