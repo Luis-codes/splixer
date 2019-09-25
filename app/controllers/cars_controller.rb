@@ -1,7 +1,7 @@
 class CarsController < ApplicationController
 
   def index
-    @car = Car.order("RANDOM()")
+    @car = Car.all.sample
   end
 
   def new 
@@ -9,11 +9,13 @@ class CarsController < ApplicationController
   end
 
   def create
-    Car.create(car_params)
+    @car = Car.create(car_params)
     if @car.invalid?
       flash[:error] = '<strong>Could not save</strong the data you entered is invalid.'
+      redirect_to new_car_path
+    else
+      redirect_to root_path
     end
-    redirect_to root_path
   end
 
   private
